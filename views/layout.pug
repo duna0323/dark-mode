@@ -2,6 +2,8 @@ doctype html
 html
   head
     title= title
+    block scripts
+      script(defer,src='/app/entry.js')
     link(rel='stylesheet', href='/stylesheets/style.css')
     script(defer, src="/javascripts/bundle.js")
   body
