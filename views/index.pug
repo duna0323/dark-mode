@@ -1,5 +1,44 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  header.cd-header
+    .header-wrapper
+      .logo-wrap
+        a.hover-target(href='#')
+          span your
+          | logo
+      .nav-but-wrap
+        .menu-icon.hover-target
+          span(class='menu-icon__line menu-icon__line-left')
+          span(class='menu-icon__line')
+          span(class='menu-icon__line menu-icon__line-right')
+    .nav
+      div(class='nav__content')
+        ul(class='nav__list')
+          li(class='nav__list-item active-nav')
+            a.hover-target(href='#') Home
+          li(class='nav__list-item')
+            a.hover-target(href='#') Portfolio
+          li(class='nav__list-item')
+            a.hover-target(href='#') Studio
+          li(class='nav__list-item')
+            a.hover-target(href='#') News
+          li(class='nav__list-item')
+            a.hover-target(href='#') Contact
+    .section.full-height.over-hide
+      .switch-wrap
+        h1 Drop-down menu
+        #switch.hover-target
+          #circle
+        p
+          span dark
+          | -
+          span light
+    #cursor.cursor
+    #cursor2.cursor2
+    #cursor3.cursor3
+    //
+      Link to page
+      ==================================================
+    a.link-to-portfolio.hover-target(href='https://front.codes/' target='”_blank”')
+  div#root
