@@ -1,4 +1,8 @@
  "use strict";
+
+import $ from 'jquery';
+const global = Function('return this;')();
+global.jQuery = $;
     	
 //Page cursors
 document.getElementsByTagName("body")[0].addEventListener("mousemove", function(n) {
@@ -49,7 +53,6 @@ var app = function () {
 }();
 
 //Switch light/dark
-import $ from 'jquery';
 $("#switch").on('click', function () {
 	if ($("body").hasClass("light")) {
 		$("body").removeClass("light");

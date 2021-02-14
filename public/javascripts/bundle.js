@@ -92,7 +92,11 @@
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
- //Page cursors
+
+
+
+var global = Function('return this;')();
+global.jQuery = jquery__WEBPACK_IMPORTED_MODULE_0___default.a; //Page cursors
 
 document.getElementsByTagName("body")[0].addEventListener("mousemove", function (n) {
   t.style.left = n.clientX + "px", t.style.top = n.clientY + "px", e.style.left = n.clientX + "px", e.style.top = n.clientY + "px", i.style.left = n.clientX + "px", i.style.top = n.clientY + "px";
@@ -144,7 +148,6 @@ var app = function () {
 
   init();
 }(); //Switch light/dark
-
 
 
 jquery__WEBPACK_IMPORTED_MODULE_0___default()("#switch").on('click', function () {
